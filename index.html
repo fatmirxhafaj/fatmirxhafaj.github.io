@@ -1,164 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatmir Xhafaj - Links</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #5d2e8e;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 400px;
-            width: 100%;
-            padding: 20px;
-        }
-        
-        .phone-frame {
-            background-color: #4a2376;
-            border-radius: 30px;
-            overflow: hidden;
-            padding: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            border: 2px solid white;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .logo-icon {
-            color: white;
-            margin-left: 5px;
-        }
-        
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .profile-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-            border: 3px solid white;
-        }
-        
-        .profile-name {
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .social-title {
-            color: white;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .link-btn {
-            background-color: white;
-            color: #4a2376;
-            padding: 12px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-        
-        .link-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            background-color: #8dd865;
-        }
-        
-        .link-btn i {
-            margin-right: 10px;
-        }
-        
-        .custom-link {
-            margin-top: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #4a2376;
-            border: 2px solid white;
-        }
-        
-        .custom-link:hover {
-            background-color: rgba(255, 255, 255, 1);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .custom-link-text {
-            margin-left: 15px;
-            font-weight: bold;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatmir Xhafaj</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Background styles */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.far-out.travel/wp-content/uploads/2024/10/Tirana-Albania-5.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+    
+    /* Content styles */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    /* Social media styles */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    
+    .social-button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* CTA button */
+    .cta-button {
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+    
+    /* Footer styles */
+    footer {
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: auto;
+    }
+    
+    /* Responsive adjustments */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+      
+      p {
+        font-size: 1.75rem;
+      }
+    }
+    
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="phone-frame">
-            <div class="profile">
-                <img src="https://scontent.ftia5-1.fna.fbcdn.net/v/t39.30808-6/425550622_776457011194988_5772908676285179829_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=rJ70By-emFIQ7kNvwH3Cg20&_nc_oc=AdkfGD4pXLgY-7N3VNMYhp2_z3AOIF4a9E2Ztj6V9psAmbh0MnU143G5QBbj_c7FxVk&_nc_zt=23&_nc_ht=scontent.ftia5-1.fna&_nc_gid=gOV_8G5WWWyHa9os9Ig56w&oh=00_AfHFH1CxTy59k2F5f8h_CwdnGR3YUjspxEao7z_UrCqcCQ&oe=67FDCAC7" alt="Profile" class="profile-img">
-                <h1 class="profile-name">Fatmir Xhafaj</h1>
-                <p class="social-title">Links</p>
-            </div>
-            
-            <div class="links">
-                <a href="https://docs.google.com/forms/d/1qphNNpEEbp5XvCdT9-x9bcg_UK_tYISPEhOvkXDeDdk/edit" class="custom-link">
-                    <div class="custom-link-text" style="text-align: center;">Bashkohu me ne!</div>
-                </a>
-                <a href="https://www.facebook.com/fatmirxhafajps" class="link-btn">
-                    <i class="fab fa-facebook-f"></i>
-                    Facebook
-                </a>
-                <a href="https://www.instagram.com/fatmirxhafaj_ps" class="link-btn">
-                    <i class="fab fa-instagram"></i>
-                    Instagram
-                </a>
-                <a href="https://www.x.com/fatmirxhafaj" class="link-btn">
-                    <i class="fab fa-x-twitter"></i>
-                    X
-                </a>
-            </div>
-        </div>
+  <!-- Background with overlay -->
+  <div class="background"></div>
+  <div class="overlay"></div>
+  
+  <!-- Main content -->
+  <div class="container">
+    <h1>Fatmir Xhafaj</h1>
+    <p>Garanci për Shqipërinë në BE 2030</p>
+    
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://twitter.com/fatmirxhafaj" class="social-button" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+        </svg>
+        <span class="sr-only">Twitter</span>
+      </a>
+      <a href="https://facebook.com/fatmirxhafajps" class="social-button" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://instagram.com/fatmirxhafaj_ps" class="social-button" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span class="sr-only">Instagram</span>
+      </a>
     </div>
+    
+    <!-- CTA Button -->
+    <a href="https://docs.google.com/forms/d/1qphNNpEEbp5XvCdT9-x9bcg_UK_tYISPEhOvkXDeDdk/edit"><button class="cta-button">Bashkohu me ne!</button></a>
+  </div>
+  
+  <!-- Footer -->
+  <footer>  </footer>
 </body>
 </html>
