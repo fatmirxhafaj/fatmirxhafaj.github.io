@@ -1,93 +1,164 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fatmir Xhafaj - Deputet i Kuvendit të Shqipërisë</title>
-  <style>
-    :root {
-      --primary-red: #cc0033;
-      --hover-red: #b3002b;
-      --background: #f4f4f4;
-      --text-dark: #1a1a1a;
-      --text-light: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--background);
-      color: var(--text-dark);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .profile-image {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 5px solid var(--primary-red);
-      object-fit: cover;
-    }
-
-    h1 {
-      margin: 20px 0 5px;
-      font-size: 28px;
-      color: var(--primary-red);
-    }
-
-    h2 {
-      margin: 0;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
-      max-width: 400px;
-      margin-top: 20px;
-    }
-
-    .link-card {
-      background-color: var(--primary-red);
-      color: var(--text-light);
-      text-decoration: none;
-      padding: 15px 20px;
-      border-radius: 12px;
-      font-size: 16px;
-      font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .link-card:hover {
-      background-color: var(--hover-red);
-      transform: scale(1.03);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatmir Xhafaj - Links</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #5d2e8e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .phone-frame {
+            background-color: #4a2376;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 2px solid #7bce52;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-icon {
+            color: #7bce52;
+            margin-left: 5px;
+        }
+        
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #7bce52;
+        }
+        
+        .profile-name {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .social-title {
+            color: #7bce52;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .link-btn {
+            background-color: #7bce52;
+            color: #4a2376;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            background-color: #8dd865;
+        }
+        
+        .link-btn i {
+            margin-right: 10px;
+        }
+        
+        .custom-link {
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #4a2376;
+            border: 2px solid #7bce52;
+        }
+        
+        .custom-link:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .custom-link-text {
+            margin-left: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="header">
-    <img src="https://linktr.ee/fatmirxhafaj" alt="Fatmir Xhafaj" class="profile-image"/>
-    <h1>Fatmir Xhafaj</h1>
-    <h2>Deputet i Kuvendit të Shqipërisë</h2>
-  </div>
-
-  <div class="links">
-    <a class="link-card" href="https://www.instagram.com/fatmirxhafaj_ps" target="_blank">Instagram</a>
-    <a class="link-card" href="https://x.com/fatmirxhafaj" target="_blank">X (Twitter)</a>
-    <a class="link-card" href="https://www.facebook.com/fatmirxhafajps" target="_blank">Facebook</a>
-  </div>
+    <div class="container">
+        <div class="phone-frame">
+            <div class="profile">
+                <img src="/placeholder.svg?height=80&width=80" alt="Profile" class="profile-img">
+                <h1 class="profile-name">Fatmir Xhafaj</h1>
+                <p class="social-title">Links</p>
+            </div>
+            
+            <div class="links">
+                <a href="https://docs.google.com/forms/d/1qphNNpEEbp5XvCdT9-x9bcg_UK_tYISPEhOvkXDeDdk/edit" class="custom-link">
+                    <div class="custom-link-text" style="text-align: center;">Bashkohu me ne!</div>
+                </a>
+                <a href="www.facebook.com/fatmirxhafajps" class="link-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+                <a href="www.instagram.com/fatmirxhafaj_ps" class="link-btn">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="www.x.com/fatmirxhafaj" class="link-btn">
+                    <i class="fab fa-x-twitter"></i>
+                    X
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
